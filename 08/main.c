@@ -17,7 +17,7 @@ struct point *m = (void *)memory;
 
 int main(void) {
     init();
-    int *p = (int *) alloc(4*sizeof(int));
+    int *p = (int *)malloc(4*sizeof(int));
     *p = 100;
 
     printf("[1] p = %d\n", *p);
